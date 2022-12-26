@@ -10,6 +10,7 @@ class bank
 	char name[100];
 	char address[100];
 	char account;
+	float balance;
 
 	// Public functions
 	public:
@@ -31,6 +32,8 @@ void bank::open_account()
 	cout << "Type of account | savings (S) or current (C): ";
 	cin >> account;
 	cout << "Enter deposit amount: ";
+	cin >> balance;
+	cout << "Your account has been created successfully! \n";
 }
 
 // Main functions
