@@ -36,6 +36,24 @@ void bank::open_account()
 	cout << "Your account has been created successfully! \n";
 }
 
+void bank ::deposite_money()
+{
+	int deposit;
+	cout << "Enter deposit amount :: ";
+	cin >> deposit;
+	balance += deposit;
+	cout << "Total balance :: \t " << balance;
+}
+
+void bank::display_account()
+{
+	cout << "Name :: \t " << name;
+	cout << "Your address :: \t " << address;
+	cout << "Account type :: \t" << account;
+	cout << "--- ";
+	cout << "Total balance :: \t" << balance;
+}
+
 // Main functions
 int main() 
 {
